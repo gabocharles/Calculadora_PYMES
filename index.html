@@ -1,35 +1,14 @@
+
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Calculadora de Finanzas Emprendedoras</title>
-
-  <!-- (Opcional) CSP básica para permitir el iframe de Calconic -->
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self';
-                 frame-src https://www.calconic.com https://preview.calconic.com;
-                 style-src 'self' 'unsafe-inline';
-                 img-src 'self' data:;
-                 script-src 'self';
-                 connect-src 'self';">
-  <style>
-    html, body { height: 100%; margin: 0; background: #0f0f11; }
-    .wrap { position: fixed; inset: 0; }
-    iframe { width: 100%; height: 100%; border: 0; display: block; }
-    /* (Opcional) pantalla de fallback mientras carga */
-    .fallback { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#fff; font:16px system-ui; }
-  </style>
+  <title>Calculadora</title>
 </head>
 <body>
-  <div class="wrap">
-    <div class="fallback" id="fallback">Cargando calculadora…</div>
-    <iframe
-      src="https://www.calconic.com/calculator-widgets/calculadora-finanzas-emprendedoras/6843023b7b0712002a4f1eed?layouts=true"
-      loading="lazy"
-      allowfullscreen
-      onload="document.getElementById('fallback')?.remove();">
-    </iframe>
-  </div>
+  <!-- Pega aquí TU ID desde Embed → HTML (NO el link de Share) -->
+  <div class="calconic-calculator" data-calculatorid="6843023b7b0712002a4f1eed"></div>
+  <script src="https://cdn.calconic.com/static/js/"></script>
 </body>
 </html>
